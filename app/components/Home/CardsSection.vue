@@ -69,7 +69,7 @@ const features = [
               class="w-12 h-12 rounded-full flex items-center justify-center transition-all group-hover:bg-emerald-500 group-hover:text-white bg-gray-200 text-gray-900"
             >
               <IconArrowRight
-                class="w-5 h-5 group-hover:-rotate-45 transition-all duration-100"
+                class="w-5 h-5 group-hover:-rotate-45 transition-all duration-500 ease-in-out"
               />
             </div>
           </div>

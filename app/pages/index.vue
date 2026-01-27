@@ -3,7 +3,7 @@
 <template>
   <div class="">
     <div class="finance-top-section">
-      <Header />
+      <LayoutHeader />
       <HomeHeroSection />
     </div>
     <HomeCardsSection />

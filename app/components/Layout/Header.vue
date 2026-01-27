@@ -160,7 +160,7 @@ const links = [
   >
     <div class="container">
       <div
-        class="flex items-center justify-between !px-10 py-3 transition-all duration-300"
+        class="flex items-center justify-between lg:!px-10 !px-0 py-3 transition-all duration-300"
         :class="{ 'backdrop-blur-xl bg-white/5 rounded-full navbar': !isSticky }"
       >
         <div class="flex items-center gap-3">
@@ -168,7 +168,7 @@ const links = [
             <img
               src="https://staco-react.vercel.app/assets/finance-logo-CcnUpYEH.svg"
               alt="logo"
-              class="logo-light"
+              class="logo-light lg:w-auto w-24"
             />
           </a>
         </div>

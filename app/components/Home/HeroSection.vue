@@ -6,8 +6,8 @@ const isPlaying = ref(true);
   <section
     class="relative min-h-screen flex items-center z-10 justify-center pt-32 pb-20 bg-dark-navy overflow-hidden"
   >
-    <FloatingBlobs />
-    <CurvedLines />
+    <UIFloatingBlobs />
+    <UICurvedLines />
 
     <div class="container px-4 sm:px-6 lg:px-8">
       <div class="flex lg:flex-row flex-col gap-12 justify-between lg:gap-8 items-center">
@@ -17,7 +17,7 @@ const isPlaying = ref(true);
           :enter="{ opacity: 1, x: 0, transition: { duration: 700, delay: 200 } }"
           class="relative z-10"
         >
-          <AnimatedHeadline />
+          <UIAnimatedHeadline />
 
           <p
             v-motion
@@ -49,7 +49,7 @@ const isPlaying = ref(true);
           v-motion
           :initial="{ opacity: 0, x: 30 }"
           :enter="{ opacity: 1, x: 0, transition: { duration: 700, delay: 400 } }"
-          class="relative z-10 w-[40%]"
+          class="relative z-10 lg:w-[40%]"
         >
           <div class="video-container relative rounded-2xl overflow-hidden aspect-[4/3]">
             <img

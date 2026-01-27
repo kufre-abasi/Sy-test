@@ -88,10 +88,12 @@ onUnmounted(() => stopTimer());
               >
 
               <div class="mt-4">
-                <h2 class="text-5xl font-bold text-slate-900 leading-[40px] mb-6">
+                <h2
+                  class="lg:text-5xl text-3xl font-bold text-slate-900 leading-[40px] mb-6"
+                >
                   {{ gallery[activeIndex].title }}
                 </h2>
-                <p class="text-gray-500 text-lg leading-relaxed">
+                <p class="text-gray-500 lg:text-lg text-base leading-relaxed">
                   {{ gallery[activeIndex].text }}
                 </p>
               </div>
@@ -101,7 +103,7 @@ onUnmounted(() => stopTimer());
               <div
                 v-for="i in gallery[activeIndex].list"
                 :key="i"
-                class="flex items-center gap-2"
+                class="flex lg:items-center gap-2"
               >
                 <IconCheck class="w-5 h-5 text-emerald-500 stroke-3" />
                 <span class="font-bold text-slate-700 text-sm">{{ i }}</span>

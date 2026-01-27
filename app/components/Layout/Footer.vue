@@ -66,16 +66,23 @@ const footerLinks = {
       :style="{ marginBottom: `${disclaimerHeight}px` }"
     >
       <footer
-        class="bg-[#1A1F2D] text-white rounded-[30px] pt-20 mx-6 pb-10 px-6 relative z-10"
+        class="bg-[#1A1F2D] text-white rounded-[30px] pt-20 lg:mx-6 pb-10 lg:px-10 px-0 relative z-10"
       >
-        <div class="max-w-7xl mx-auto">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-20">
-            <div class="lg:col-span-1">
-              <div class="flex items-center gap-2 mb-8">
-                <div class="w-8 h-8 bg-emerald-400 rounded-full blur-[1px]"></div>
-                <span class="text-2xl font-bold tracking-tight">Staco</span>
+        <div class="">
+          <div
+            class="grid grid-cols-1 container md:grid-cols-2 lg:grid-cols-6 gap-12 mb-20"
+          >
+            <div class="lg:col-span-2">
+              <div class="flex items-center gap-3 mb-3">
+                <a class="navbar-brand header-logo" href="/">
+                  <img
+                    src="https://staco-react.vercel.app/assets/finance-logo-CcnUpYEH.svg"
+                    alt="logo"
+                    class="logo-light"
+                  />
+                </a>
               </div>
-              <p class="text-gray-400 leading-relaxed mb-8">
+              <p class="text-[#ffffffb2] leading-relaxed mb-8">
                 Staco is the dedicated platform for performance management that helps to
                 grow your startup quickly.
               </p>
@@ -91,8 +98,10 @@ const footerLinks = {
             </div>
 
             <div>
-              <h5 class="font-bold mb-8 flex items-center gap-2">PRODUCTS 🔥</h5>
-              <ul class="space-y-4 text-gray-400">
+              <h5 class="font-bold mb-8 flex items-center gap-2 !text-white">
+                PRODUCTS 🔥
+              </h5>
+              <ul class="space-y-4 text-[#ffffffb2]">
                 <li
                   v-for="link in footerLinks.products"
                   :key="link"
@@ -104,8 +113,10 @@ const footerLinks = {
             </div>
 
             <div>
-              <h5 class="font-bold mb-8 flex items-center gap-2">WHY CHOOSE 🌟</h5>
-              <ul class="space-y-4 text-gray-400">
+              <h5 class="font-bold mb-8 flex items-center gap-2 !text-white">
+                WHY CHOOSE 🌟
+              </h5>
+              <ul class="space-y-4 text-[#ffffffb2]">
                 <li
                   v-for="link in footerLinks.whyChoose"
                   :key="link"
@@ -117,8 +128,10 @@ const footerLinks = {
             </div>
 
             <div>
-              <h5 class="font-bold mb-8 flex items-center gap-2">RESOURCES ➕</h5>
-              <ul class="space-y-4 text-gray-400">
+              <h5 class="font-bold mb-8 flex items-center gap-2 !text-white">
+                RESOURCES ➕
+              </h5>
+              <ul class="space-y-4 text-[#ffffffb2]">
                 <li
                   v-for="link in footerLinks.resources"
                   :key="link"
@@ -130,8 +143,10 @@ const footerLinks = {
             </div>
 
             <div>
-              <h5 class="font-bold mb-8 flex items-center gap-2">COMPANY 💎</h5>
-              <ul class="space-y-4 text-gray-400">
+              <h5 class="font-bold mb-8 flex items-center gap-2 !text-white">
+                COMPANY 💎
+              </h5>
+              <ul class="space-y-4 text-[#ffffffb2]">
                 <li
                   v-for="link in footerLinks.company"
                   :key="link"
@@ -144,13 +159,17 @@ const footerLinks = {
           </div>
 
           <div
-            class="pt-10 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6 text-gray-400 text-sm"
+            class="pt-10 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6 text-[#ffffffb2] text-sm"
           >
-            <p>2023 Staco. All rights reserved.</p>
-            <div class="flex gap-8">
-              <a href="#" class="hover:text-white">Terms and conditions</a>
-              <a href="#" class="hover:text-white">Cookies</a>
-              <a href="#" class="hover:text-white">Privacy policy</a>
+            <div
+              class="container flex flex-col md:flex-row justify-between items-center gap-6 text-[#ffffffb2] text-sm"
+            >
+              <p>2023 Staco. All rights reserved.</p>
+              <div class="flex gap-8">
+                <a href="#" class="hover:text-white">Terms and conditions</a>
+                <a href="#" class="hover:text-white">Cookies</a>
+                <a href="#" class="hover:text-white">Privacy policy</a>
+              </div>
             </div>
           </div>
         </div>
