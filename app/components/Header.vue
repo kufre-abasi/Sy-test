@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import ProductDropdown from "./UI/ProductDropdown.vue";
-import { LucideMenu, ChevronDown } from "lucide-vue-next";
 
 const mobileMenuOpen = ref(false);
 
