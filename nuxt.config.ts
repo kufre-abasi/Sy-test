@@ -11,8 +11,12 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxt/scripts",
     "@nuxt/test-utils",
+    "motion-v/nuxt",
+    "nuxt-lucide-icons",
   ],
-
+ lucide: {
+    namePrefix: 'Icon'
+  },
   devtools: {
     enabled: true,
   },
