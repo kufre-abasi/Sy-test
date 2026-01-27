@@ -15,13 +15,18 @@ onUnmounted(() => clearInterval(interval));
 </script>
 
 <template>
-  <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold leading-tight">
+  <h1
+    class="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold leading-tight"
+  >
     <span class="text-white">Financial Security</span>
     <br />
     <span class="text-white">Made </span>
     <span class="relative inline-block">
       <Transition mode="out-in" name="slide-up">
-        <span :key="words[currentIndex]" class="text-gradient-primary inline-block">
+        <span
+          :key="words[currentIndex]"
+          class="text-gradient-primary inline-block"
+        >
           {{ words[currentIndex] }}
         </span>
       </Transition>

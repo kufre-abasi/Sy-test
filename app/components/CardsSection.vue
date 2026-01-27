@@ -46,7 +46,9 @@ const features = [
             {{ feature.title }}
           </h3>
 
-          <p class="text-gray-600 text-[16px] font-medium leading-relaxed mb-10">
+          <p
+            class="text-gray-600 text-[16px] font-medium leading-relaxed mb-10"
+          >
             {{ feature.description }}
           </p>
         </div>
@@ -61,7 +63,7 @@ const features = [
           <div
             class="w-12 h-12 rounded-full flex items-center justify-center transition-all group-hover:bg-emerald-500 group-hover:text-white bg-gray-200 text-gray-900"
           >
-            <LucideArrowRightIcon class="w-5 h-5" />
+            <IconArrowRightIcon class="w-5 h-5" />
           </div>
         </div>
       </div>

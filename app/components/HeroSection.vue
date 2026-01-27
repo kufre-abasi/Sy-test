@@ -38,7 +38,7 @@ const isPlaying = ref(true);
             <NuxtLink to="#" class="btn-hero-primary"> Get Start For Free </NuxtLink>
             <NuxtLink to="#" class="btn-hero-secondary group">
               <span>Let's talk</span>
-              <LucideArrowRight
+              <IconArrowRight
                 class="w-5 h-5 transition-transform group-hover:translate-x-1"
               />
             </NuxtLink>
@@ -62,11 +62,11 @@ const isPlaying = ref(true);
               @click="isPlaying = !isPlaying"
               class="absolute bottom-4 right-4 md:bottom-6 md:right-6 w-12 h-12 md:w-14 md:h-14 rounded-full bg-background/90 backdrop-blur-sm flex items-center justify-center border border-border hover:bg-primary hover:border-primary transition-all group"
             >
-              <LucidePause
+              <IconPause
                 v-if="isPlaying"
                 class="w-5 h-5 text-primary group-hover:text-primary-foreground transition-colors"
               />
-              <LucidePlay
+              <IconPlay
                 v-else
                 class="w-5 h-5 text-primary group-hover:text-primary-foreground transition-colors ml-0.5"
               />

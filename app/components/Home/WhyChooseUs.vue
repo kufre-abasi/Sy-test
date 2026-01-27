@@ -23,8 +23,7 @@ const gallery = [
   },
   {
     title: "Data-driven insights",
-    text:
-      "Unlock the power of your team's metrics with real-time reporting and analytics that drive better decision making.",
+    text: `Unlock the power of your team's metrics with real-time reporting and analytics that drive better decision making.'`,
     url: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=800",
     list: ["99% Survey Report", "Trusted by teams", "Self-Service"],
   },
@@ -72,68 +71,72 @@ onUnmounted(() => stopTimer());
 
 <template>
   <section
-    class="max-w-7xl mx-auto px-6 py-20 flex flex-col lg:flex-row items-center gap-16"
-    @touchstart="handleTouchStart"
-    @touchend="handleTouchEnd"
+    class="relative bg-[#fff] z-20 w-full bg-cover bg-center flex flex-col items-center"
   >
-    <div class="lg:w-1/2 min-h-[350px]">
-      <transition name="slide-fade" mode="out-in">
-        <div :key="activeIndex" class="text-center lg:text-left">
-          <header class="mb-8">
-            <span
-              class="text-blue-600 font-bold tracking-widest leading-[30px] uppercase text-[18px]"
-              >Why Choose Us</span
-            >
+    <section
+      class="container w-full py-20 z-20 flex flex-col lg:flex-row items-center gap-16"
+      @touchstart="handleTouchStart"
+      @touchend="handleTouchEnd"
+    >
+      <div class="lg:w-1/2 min-h-[350px]">
+        <transition name="slide-fade" mode="out-in">
+          <div :key="activeIndex" class="text-center lg:text-left">
+            <header class="mb-8">
+              <span
+                class="text-blue-600 font-bold tracking-widest leading-[30px] uppercase text-[18px]"
+                >Why Choose Us</span
+              >
 
-            <div class="mt-4">
-              <h2 class="text-5xl font-bold text-slate-900 leading-[60px] mb-6">
-                {{ gallery[activeIndex].title }}
-              </h2>
-              <p class="text-gray-500 text-lg leading-relaxed">
-                {{ gallery[activeIndex].text }}
-              </p>
-            </div>
-          </header>
+              <div class="mt-4">
+                <h2 class="text-5xl font-bold text-slate-900 leading-[40px] mb-6">
+                  {{ gallery[activeIndex].title }}
+                </h2>
+                <p class="text-gray-500 text-lg leading-relaxed">
+                  {{ gallery[activeIndex].text }}
+                </p>
+              </div>
+            </header>
 
-          <div class="grid grid-cols-2 gap-4">
-            <div
-              v-for="i in gallery[activeIndex].list"
-              :key="i"
-              class="flex items-center gap-2"
-            >
-              <CheckIcon class="w-5 h-5 text-emerald-500 stroke-3" />
-              <span class="font-bold text-slate-700 text-sm">{{ i }}</span>
+            <div class="grid grid-cols-2 gap-4">
+              <div
+                v-for="i in gallery[activeIndex].list"
+                :key="i"
+                class="flex items-center gap-2"
+              >
+                <IconCheck class="w-5 h-5 text-emerald-500 stroke-3" />
+                <span class="font-bold text-slate-700 text-sm">{{ i }}</span>
+              </div>
             </div>
           </div>
-        </div>
-      </transition>
-    </div>
+        </transition>
+      </div>
 
-    <div class="lg:w-1/2 flex gap-4 h-125 w-full">
-      <div
-        v-for="(img, index) in gallery"
-        :key="index"
-        @click="selectCard(index)"
-        class="relative h-full overflow-hidden rounded-[40px] cursor-pointer transition-all duration-700 ease-[cubic-bezier(0.4,0,0.2,1)]"
-        :class="
-          activeIndex === index
-            ? 'flex-[4]'
-            : 'flex-1 grayscale brightness-75 hover:brightness-100'
-        "
-      >
-        <img :src="img.url" class="absolute inset-0 w-full h-full object-cover" />
-
+      <div class="lg:w-1/2 flex gap-4 h-125 w-full">
         <div
-          v-if="activeIndex === index"
-          class="absolute bottom-8 left-8 right-8 h-1.5 bg-white/20 rounded-full overflow-hidden"
+          v-for="(img, index) in gallery"
+          :key="index"
+          @click="selectCard(index)"
+          class="relative h-full overflow-hidden rounded-[40px] cursor-pointer transition-all duration-700 ease-[cubic-bezier(0.4,0,0.2,1)]"
+          :class="
+            activeIndex === index
+              ? 'flex-[4]'
+              : 'flex-1 grayscale brightness-75 hover:brightness-100'
+          "
         >
+          <img :src="img.url" class="absolute inset-0 w-full h-full object-cover" />
+
           <div
-            class="h-full bg-white transition-none"
-            :class="{ 'progress-bar-active': isAutoPlaying }"
-          ></div>
+            v-if="activeIndex === index"
+            class="absolute bottom-8 left-8 right-8 h-1.5 bg-white/20 rounded-full overflow-hidden"
+          >
+            <div
+              class="h-full bg-white transition-none"
+              :class="{ 'progress-bar-active': isAutoPlaying }"
+            ></div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   </section>
 </template>
 

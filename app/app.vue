@@ -1,5 +1,5 @@
 <script setup>
-// import Header from "@/components/Header.vue";
+// import Header from '@/components/Header.vue';
 
 useHead({
   meta: [{ name: "viewport", content: "width=device-width, initial-scale=1" }],
