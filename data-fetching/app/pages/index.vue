@@ -1,13 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="">
-    <div class="finance-top-section">
-      <LayoutHeader />
-      <HomeHeroSection />
-    </div>
-    <HomeCardsSection />
-    <HomeWhyChooseUs />
-    <LayoutFooter />
+  <div class="bg-dark-navy min-h-screen text-white">
+    <Movie />
   </div>
 </template>

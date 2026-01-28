@@ -1,0 +1,50 @@
+<template>
+  <div class="loading-container">
+    <div class="spinner"></div>
+    <p>{{ message }}</p>
+  </div>
+</template>
+
+<script setup>
+defineProps({
+  message: {
+    type: String,
+    default: "Loading movies...",
+  },
+});
+</script>
+
+<style scoped>
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  min-height: 300px;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #667eea;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-container p {
+  color: #666;
+  font-size: 1rem;
+}
+</style>
