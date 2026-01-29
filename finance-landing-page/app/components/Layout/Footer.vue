@@ -62,11 +62,11 @@ const footerLinks = {
   <div class="relative min-h-screen">
     <!-- footer -->
     <div
-      class="relative z-10 bg-slate-50"
+      class="relative z-5 bg-slate-50"
       :style="{ marginBottom: `${disclaimerHeight}px` }"
     >
       <footer
-        class="bg-[#1A1F2D] text-white rounded-[30px] pt-20 lg:mx-6 pb-10 lg:px-10 px-0 relative z-10"
+        class="bg-[#1A1F2D] text-white rounded-[30px] pt-20 lg:mx-6 pb-10 lg:px-10 px-0 relative z-5"
       >
         <div class="">
           <div
