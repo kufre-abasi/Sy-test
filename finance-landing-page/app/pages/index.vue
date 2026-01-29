@@ -1,13 +1,14 @@
 <script setup></script>
 
 <template>
-  <div class="">
+  <Layout class="">
     <div class="finance-top-section">
       <LayoutHeader />
       <HomeHeroSection />
     </div>
     <HomeCardsSection />
+    <HomeBanner />
     <HomeWhyChooseUs />
-    <LayoutFooter />
-  </div>
+    <!-- <HomeTestimonialSection /> -->
+  </Layout>
 </template>

@@ -29,6 +29,7 @@
     "@tailwindcss/vite": "^4.1.18",
     "@unhead/vue": "^2.1.2",
     "@vueuse/motion": "^3.0.3",
+    "@vueuse/nuxt": "14.1.0",
     "better-sqlite3": "^12.6.2",
     "nuxt": "^4.2.2",
     "nuxt-lucide-icons": "2.0.0",
