@@ -191,14 +191,14 @@ h1, h2, h3, h4, h5, h6 {
 @layer components {
   /* Hero Button Variants */
   .btn-hero-primary {
-    @apply inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-semibold text-white transition-all duration-300;
+    @apply inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-semibold hover:bg-[#b2eda1] text-white transition-all duration-300;
     background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent-mint)) 100%);
    }
 
   .btn-hero-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 30px -4px hsl(var(--primary) / 0.6);
-  }
+    background-color: #b2eda1;
+   }
 
   .btn-hero-secondary {
     @apply inline-flex items-center justify-center gap-2 px-6 py-4 font-medium text-white transition-all duration-300 hover:text-white;

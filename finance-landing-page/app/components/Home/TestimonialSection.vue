@@ -43,12 +43,12 @@ const partners = ["jQuery", "GitHub", "Portis", "envato", "DAOMAK"];
 </script>
 
 <template>
-  <div class="bg-[#ecf1f1] z-30 px-6 py-40">
+  <div class="bg-[#ecf1f1] !z-40 px-6 py-40">
     <div class="container">
       <div
-        class="bg-white rounded-[40px] shadow-sm border border-gray-100 overflow-hidden"
+        class="bg-white !z-40 rounded-[40px] shadow-sm border border-gray-100 overflow-hidden"
       >
-        <div class="grid md:grid-cols-2 items-center p-8 md:p-16 gap-12">
+        <div class="grid z-20 md:grid-cols-2 items-center p-8 md:p-16 gap-12">
           <div class="relative flex justify-center">
             <div
               class="absolute -left-10 top-1/4 w-32 h-64 bg-[#064E3B] rounded-full -rotate-45 z-0"

@@ -9,6 +9,6 @@
     <HomeCardsSection />
     <HomeBanner />
     <HomeWhyChooseUs />
-    <!-- <HomeTestimonialSection /> -->
+    <HomeTestimonialSection />
   </Layout>
 </template>
