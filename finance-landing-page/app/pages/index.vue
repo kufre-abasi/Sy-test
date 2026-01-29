@@ -9,6 +9,6 @@
     <HomeCardsSection />
     <HomeBanner />
     <HomeWhyChooseUs />
-    <HomeTestimonialSection />
+    <!-- <div class="z-20"><HomeTestimonialSection /></div> -->
   </Layout>
 </template>
